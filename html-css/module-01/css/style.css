@@ -1,0 +1,19 @@
+section {
+    width: 700px;
+    height: auto;
+    border: 1px solid rgb(247, 247, 247);
+    box-shadow: 0 2px 2px;
+    margin: auto;
+    padding: 5px;
+}
+p{
+    font-size: 12px;
+    color: rgb(4, 4, 112);
+}
+h2 {
+    font-size: 12px;
+    color: rgb(4, 4, 112);
+}
+ul {
+    font-size: 12px;
+}
