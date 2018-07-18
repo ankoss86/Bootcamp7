@@ -1,0 +1,32 @@
+.menu {
+    width: 900px;
+    font-size: 0;
+    padding: 70px;
+    margin: auto;
+
+}
+.headmenu {
+   
+    text-align: center;
+}
+
+.linkmenu {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-right: 120px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.linkmenu:last-child {
+    margin-right: 0;
+}
+
+#li1 {
+    font-size: 34px;
+    color:red;
+}
+.linkmenu:first-child {
+   color: dodgerblue;
+}
