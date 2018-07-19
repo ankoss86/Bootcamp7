@@ -6,7 +6,7 @@
 
 }
 .headmenu {
-   
+    color: #626262; 
     text-align: center;
 }
 
@@ -17,16 +17,13 @@
     margin-right: 120px;
     font-size: 14px;
     display: inline-block;
-}
+    color: #626262;
+   }
 
+.linkmenublue {
+    color: #03a9f4;
+}
 .linkmenu:last-child {
     margin-right: 0;
 }
 
-#li1 {
-    font-size: 34px;
-    color:red;
-}
-.linkmenu:first-child {
-   color: dodgerblue;
-}
