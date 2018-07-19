@@ -1,4 +1,5 @@
-.menu {
+/* меню через UL */
+/* .menu {
     width: 900px;
     font-size: 0;
     padding: 70px;
@@ -25,5 +26,31 @@
 }
 .linkmenu:last-child {
     margin-right: 0;
+} */
+
+.menu {
+    width: 900px;
+    padding: 70px;
+    margin: auto;
 }
 
+.headmenu {
+    text-align: center;
+}
+
+.linkmenu {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-right: 120px;
+    font-size: 14px;
+    color: #626262;
+   }
+
+.linkmenu:last-child {
+    margin-right: 0;
+} 
+
+.linkmenublue {
+    color: #03a9f4;
+}
