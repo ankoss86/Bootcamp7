@@ -1,3 +1,7 @@
+.news {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .news-block {
     font-size: 0;
     padding-bottom: 80px;
@@ -18,7 +22,6 @@ margin-bottom: 10px;
 }
 
 .title-news {
-    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 18px;
     color: #515151;
@@ -34,13 +37,14 @@ margin-bottom: 10px;
 }
 
 .text-news {
-    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: #515151;
     margin-bottom: 18px;
 }
 
 .btn {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
     font-size: 16px;
     padding: 20px 40px 20px;
     background-color: #4ec6ab;
