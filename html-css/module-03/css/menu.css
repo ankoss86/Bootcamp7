@@ -1,33 +1,3 @@
-/* меню через UL */
-/* .menu {
-    width: 900px;
-    font-size: 0;
-    padding: 70px;
-    margin: auto;
-
-}
-.headmenu {
-    color: #626262; 
-    text-align: center;
-}
-
-.linkmenu {
-    font-family: 'Playfair Display', serif;
-    text-transform: uppercase;
-    font-weight: 800;
-    margin-right: 120px;
-    font-size: 14px;
-    display: inline-block;
-    color: #626262;
-   }
-
-.linkmenublue {
-    color: #03a9f4;
-}
-.linkmenu:last-child {
-    margin-right: 0;
-} */
-
 .menu {
     width: 900px;
     padding: 70px;
@@ -51,6 +21,6 @@
     margin-right: 0;
 } 
 
-.linkmenublue {
+.linkmenu:hover {
     color: #03a9f4;
 }
