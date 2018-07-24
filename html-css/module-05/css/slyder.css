@@ -1,0 +1,54 @@
+.slyder {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/slide4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: 0;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 220px;
+    padding-bottom: 280px;
+}
+.container-slyder {
+    margin: auto;
+    height: 120px;
+    width: 900px;
+}
+
+.left, .right {
+    display: block;
+    width: 105px;
+    height: 105px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.left:hover {
+    background-color: var(--hover-bg-color);
+}
+
+.right:hover {
+    background-color: var(--hover-bg-color);
+}
+
+.title-slyder {    
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 52px;
+    color: #fff;
+}
+
+.title-info {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #fff;
+    padding-left: 118px;
+    font-weight: 200;
+}

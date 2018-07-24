@@ -1,0 +1,11 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import "header.css";
+@import "slyder.css";
+@import "new-colection.css";
+@import "footer.css";
+:root {
+    --hover-bg-color: #1abc9c;
+    --hover-bg-color-price: #7fd9c7;
+}

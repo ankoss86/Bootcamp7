@@ -1,0 +1,30 @@
+.header {
+    font-size: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;;
+   
+}
+
+.mart {
+    float: left;
+}
+
+.navy {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    float: right;
+}
+.link-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    float: left;
+    margin-right: 33px;
+}
+
+.link-name:last-child {
+    margin-right: 0;
+}
+
+.link:hover {
+    color: var(--hover-bg-color);
+}

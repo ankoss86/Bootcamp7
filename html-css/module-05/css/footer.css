@@ -1,0 +1,29 @@
+.footer {
+    background-color: #323232;
+}
+
+.copyright, .designed-by {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    margin: auto;
+}
+
+.designed-by {
+    padding-left: 2px;
+}
+
+.copyright:hover {
+    color: var(--hover-bg-color);
+}
+
+.designed-by:hover {
+    color: var(--hover-bg-color);
+}
+
+.footer-info {
+    text-align: center;
+}

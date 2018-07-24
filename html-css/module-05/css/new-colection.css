@@ -1,0 +1,152 @@
+
+
+.new-colection {
+    padding-top: 100px;
+    padding-bottom: 95px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0;
+    background-color: #e9f0fd;
+}
+
+.title-new {
+    text-transform: uppercase;
+    text-align: center;
+    color: #515151;
+    font-size: 48px;
+    font-weight: bold;
+    
+}
+
+.title-new::after {
+    content: "";
+    display: block;
+    background-color: var(--hover-bg-color);
+    margin: auto;
+    width: 170px;
+    height: 4px;
+    border-radius: 2px;
+    margin-top: 25px;
+    margin-bottom: 75px;
+}
+
+.container-new {     
+    margin: auto;
+    width: 1110px;
+}
+
+.cards {
+    position: relative;
+    margin-right: 30px;
+    float: left;
+    width: 255px;
+    height: 325px;
+}
+
+.cards:last-child {
+    margin-right: 0;
+}
+
+.card-img {
+    width: 255px;
+    height: 280px;
+}
+
+.name, .price {
+    font-size: 18px;
+    float: left;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 13px 0 13px 13px;
+}
+
+.name {
+    background-color: #323232;
+    width: 200px;
+    height: 45px;
+
+}
+
+.price {
+    background-color: #8c8c8c;
+    width: 55px;
+    height: 45px;
+}
+
+.hiden-cards {    
+    opacity: 0;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 260px;
+    width: 235px;
+    background-color: rgba(115, 115, 115, 0.3);
+}
+
+.cards:hover .hiden-cards {
+    opacity: 1;
+    transition: 1s;
+}
+
+.cards:hover .name {
+    background-color: var(--hover-bg-color);
+}
+
+.cards:hover .price {
+    background-color: var(--hover-bg-color-price);
+}
+
+.group-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cart {
+    width: 26px;
+    height: 26px;
+    display: block;
+    float: left;
+    margin: 12px;
+}
+
+.buy {
+    display: block;
+    margin: 18px auto 18px;
+    float: left;
+    font-size: 14px;
+}
+
+
+
+.img-link {
+    margin-right: 8px;
+    margin-bottom: 8px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+
+.img-link:hover {
+    background-color: var(--hover-bg-color);
+}
+
+.img-link:nth-child(n+3) {
+    margin-right: 0;
+}
+
+.buy-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid;
+    border-color: #fff;   
+    width: 166px;
+    height: 50px;
+    display: inline-block; 
+}
+
+.buy-link:hover {
+    background: #323232;
+}
