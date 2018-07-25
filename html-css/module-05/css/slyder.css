@@ -16,6 +16,7 @@
 }
 
 .left, .right {
+    background: var(--slyder-buttom-color);
     display: block;
     width: 105px;
     height: 105px;
