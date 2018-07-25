@@ -79,7 +79,7 @@
     left: 10px;
     height: 260px;
     width: 235px;
-    background-color: rgba(115, 115, 115, 0.3);
+    background-color: rgba(115, 115, 115, 0.63);
 }
 
 .cards:hover .hiden-cards {
