@@ -1,0 +1,32 @@
+.header {
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 115px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    width: 490px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-link {
+    flex: 14;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.menu-href {
+    color: #95e1d3;    
+}
+
+.menu-href:hover {
+    color: #f38181;
+    border-bottom: 4px solid #f38181;
+    padding-bottom: 7px;    
+}
+

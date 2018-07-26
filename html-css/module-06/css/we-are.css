@@ -1,0 +1,145 @@
+.we-are {
+    width: 1200px;
+    
+    margin: auto;
+}
+
+.about {
+   width: 100%;
+   min-width: 420px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.main-title {
+    color: #333;
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 20px;
+}
+
+.title {
+    color: #333;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #f38181;
+    margin: 40px auto 0;
+
+}
+
+.info {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #d2d2d2;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 93px;
+    padding-top: 40px;
+}
+
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    flex: 1 0 380px;
+    border-bottom: 1px solid #d2d2d2;;
+}
+
+.person-info {
+    display: flex;
+    flex-direction: column;
+} 
+
+.person {
+    margin-bottom: 30px;
+    width: 380px;
+    height: 470px;
+}
+
+.hiden {  
+    position: absolute;
+    background: linear-gradient(rgba(238, 139, 137, 0.8), rgba(238, 214, 135, 0.8));
+    width: 380px;
+    height: 470px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hiden-icon {
+    height: 55px;
+    width: 223px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.photo {
+    
+}
+
+.pp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person:hover {
+    box-shadow: 10px 10px #95e1d3;
+    transform: translate(-10px, -10px);
+    transition: 200ms;
+}
+
+.person:hover .hiden {
+    opacity: 1;
+}
+
+.div-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    background-color: #fce38a;
+}
+
+.div-icon:hover {
+    background-color: #95e1d3;
+}
+
+.div-icon:hover .icon {
+    transform: scale(1.7, 1.7);
+    transition: 200ms;
+}
+
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: #716e6e;
+}
+
+.skill {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: #d2d2d2;
+    font-weight: 300;
+    margin-bottom: 80px;
+}
+
+
+
+
