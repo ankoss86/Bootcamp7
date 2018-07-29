@@ -1,0 +1,32 @@
+.header {
+    padding: 35px 0 110px;
+    margin: auto;
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'wisdom script';
+    font-style: normal;
+    font-size: 26px;
+    color: var(--main-color);
+}
+
+.menu {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.menu-link:hover {
+    color: var(--main-color);
+}
