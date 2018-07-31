@@ -110,5 +110,11 @@
         justify-content: space-around;
         max-width: 108rem;
     }
+}
 
+@media screen and (orientation: landscape) {
+    .partners-cards {
+        flex-flow: row wrap;
+        max-width: 50rem;
+    }
 }

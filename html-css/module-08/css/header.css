@@ -6,7 +6,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;    
-    max-width: 1440px;
+    width: 100%;
     margin: auto;
     text-align: center;
     padding: 4.2rem 1.6rem 13rem;
