@@ -98,12 +98,12 @@
     flex: 1 0 100%;
 }
 
-/* @media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) {
     .partners-cards {
         flex-flow: row wrap;
         max-width: 50rem;
     }
-} */
+}
 
 @media (min-width: 768px) {
     .partners-cards {
