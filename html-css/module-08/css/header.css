@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/VectorSmartObject.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/Vector\ Smart\ Object-320.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;    
@@ -78,6 +78,9 @@
 }
 
 @media (min-width: 768px) {
+    .header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/Vector\ Smart\ Object-768.jpg);
+    }
     .header-items {
         width: 100%;
         flex-direction: row-reverse;
@@ -102,6 +105,9 @@
 }
 
 @media (min-width: 1440px) {
+    .header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/VectorSmartObject.jpg);
+    }
     .header-items {
         justify-content: space-around;
     }
