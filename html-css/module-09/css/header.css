@@ -78,6 +78,14 @@
 }
 
 @media (min-width: 768px) {
+    .header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/Vector\ Smart\ Object-768.jpg);
+    }
     .header-title {
         font-size: 5rem;}
 }
+
+@media (min-width: 992px) {
+    .header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/VectorSmartObject.jpg);
+    }
