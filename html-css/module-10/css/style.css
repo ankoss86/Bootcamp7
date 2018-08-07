@@ -1,0 +1,17 @@
+@import "normalize.css";
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import "header.css";
+@import "services.css";
+@import "we-are.css";
+@import "footer.css";
+/* font-family: 'Kaushan Script', cursive; */
+/* font-family: 'Montserrat', sans-serif; */
+:root {
+    --main-color: #fce38a;
+}
+  

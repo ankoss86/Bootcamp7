@@ -1,0 +1,112 @@
+.services {
+    padding-top: 45px;
+    width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+}
+
+.services-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-top: 60px;
+}
+
+.services-titles {
+    width: 340px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+.services-info {
+    width: 280px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.services-icon {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.services-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.services-text {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #d2d2d2;
+}
+
+.bg-digital {
+    width: 32px; height: 32px;
+    background: url('../img/css_sprites.png') -10px -53px;
+    margin-top: 20px;
+}
+
+.bg-HOME {
+    width: 32px; height: 31px;
+    background: url('../img/css_sprites.png') -10px -105px;
+    margin-top: 20px;
+}
+
+.bg-MoGo {
+    width: 86px; height: 23px;
+    background: url('../img/css_sprites.png') -10px -10px;
+}
+
+.bg-we_design {
+    width: 32px; height: 32px;
+    background: url('../img/css_sprites.png') -62px -53px;
+    margin-top: 20px;
+}
+
+.bg-photography {
+    width: 32px; height: 31px;
+    background: url('../img/css_sprites.png') -62px -105px;
+    margin-top: 20px;
+}
+
+.bg-seo {
+    width: 32px; height: 32px;
+    background: url('../img/css_sprites.png') -116px -10px;
+    margin-top: 20px;
+}
+
+.bg-creaticity {
+    width: 32px; height: 28px;
+    background: url('../img/css_sprites.png') -114px -105px;
+    margin-top: 20px;
+}

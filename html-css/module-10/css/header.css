@@ -1,0 +1,149 @@
+.wrapper {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 139, 137, 0.8)), to(rgba(238, 214, 135, 0.8))), url(../img/Layer\ 15@1x.png);
+    background-image: -webkit-linear-gradient(rgba(238, 139, 137, 0.8), rgba(238, 214, 135, 0.8)), url(../img/Layer\ 15@1x.png);
+    background-image: -o-linear-gradient(rgba(238, 139, 137, 0.8), rgba(238, 214, 135, 0.8)), url(../img/Layer\ 15@1x.png);
+    background-image: linear-gradient(rgba(238, 139, 137, 0.8), rgba(238, 214, 135, 0.8)), url(../img/Layer\ 15@1x.png);
+    background-position:  center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 100vw;
+}
+
+.header__main-title {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 150px;
+    color: #fff;
+    width: 890px;
+    text-align: center;
+    line-height: 0.8;
+    margin: 0 0 110px;
+}
+
+.header__title {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 72px;
+    color: #fff;
+    margin: 0 0 65px;
+    text-transform: capitalize;
+}
+
+.header__search {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    margin: 0 0 210px;
+}
+
+.header {  
+    width: 1200px;  
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 115px;    
+    display: -webkit-box;    
+    display: -ms-flexbox;    
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.header-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0 160px;
+}
+
+.header__logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    color: #fff;
+}
+
+.header-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.menu {
+    width: 490px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.menu-link {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.loupe, .shopping-cart {
+    width: 20px;
+    height: 20px;
+}
+
+.letter-menu {
+    fill: #fff;
+} 
+
+.menu-href {
+    color: #fff;    
+}
+
+.menu-icons {
+    border-bottom: 4px solid  rgba(0, 0, 0, 0.0);
+}
+
+.menu-href:hover {
+    color: var(--main-color);
+    border-bottom: 4px solid var(--main-color);
+    padding-bottom: 7px;    
+}
+
+.menu-href:hover .letter-menu {
+    fill: var(--main-color);
+}
+
+.menu-href:hover .menu-icons {
+    border-bottom: 4px solid var(--main-color);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+    .wrapper {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 139, 137, 0.8)), to(rgba(238, 214, 135, 0.8))), url(../img/Layer\ 15@2x.png);
+        background-image: -webkit-linear-gradient(rgba(238, 139, 137, 0.8), rgba(238, 214, 135, 0.8)), url(../img/Layer\ 15@2x.png);
+        background-image: -o-linear-gradient(rgba(238, 139, 137, 0.8), rgba(238, 214, 135, 0.8)), url(../img/Layer\ 15@2x.png);
+        background-image: linear-gradient(rgba(238, 139, 137, 0.8), rgba(238, 214, 135, 0.8)), url(../img/Layer\ 15@2x.png);
+        background-position:  center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100opx;
+        width: 100vw;
+    }
+}
