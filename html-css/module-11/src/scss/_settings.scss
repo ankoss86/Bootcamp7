@@ -1,0 +1,55 @@
+$colors: (
+    hover-color: #fce38a,
+    white-text: #fff,
+    gray-text: #333,
+    semi-gray-text: #c9c7c7,
+    hover-icon: #f38181,
+    shadow-bg: #95e1d3
+);
+
+%Monts-reg {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+   
+%Monts-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+%kaushan {
+    font-family: 'Kaushan Script';
+}
+
+%roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+%Opsns {
+    font-family: 'Open Sans', sans-serif;
+}
+
+%container {
+    max-width: 1200px;
+    margin: auto;
+    // flex: 0 1 1200px;
+}
+
+@mixin Flex ($f-d, $j-c, $a-i) {
+    display: flex;
+    flex-direction: $f-d;
+    justify-content: $j-c;
+    align-items: $a-i;
+}
+
+@mixin Font-header ($f-sz, $text-trans) {    
+    font-size: $f-sz;
+    text-transform: $text-trans;
+    color: #fff;
+}
+
+@mixin Font-sec ($f-sz, $text-trans, $color) {    
+    font-size: $f-sz;
+    text-transform: $text-trans;
+    color: $color;
+}

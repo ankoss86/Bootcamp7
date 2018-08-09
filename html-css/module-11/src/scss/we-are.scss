@@ -1,0 +1,115 @@
+.we-are {
+    @extend %container;
+}
+
+.sec-info {
+    @include Flex(column, center, center);
+    width: 990px;
+    margin: auto;
+    padding: 0 0 90px;
+
+    &__title {
+        @include Font-sec(24px, none, map-get($colors, gray-text));
+        @extend %kaushan;
+        margin: 0 0 25px;
+    }
+
+    &__sub-title {
+        @include Font-sec(30px, uppercase, map-get($colors, gray-text));
+        @extend %Monts-bold;
+    }
+
+    &__sub-title::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 4px;
+        background-color: map-get($colors, hover-icon);
+        margin: 40px auto 0;
+    }
+
+    &__text {
+        @include Font-sec(15px, none, map-get($colors, semi-gray-text));
+        @extend %roboto;
+    }
+}
+
+.cards {
+    @include Flex(row, space-between, center);
+    padding-bottom: 80px;
+    border-bottom: 1px solid map-get($colors, semi-gray-text);
+
+    &__person {
+        @include Flex(column, center, center);
+        width: 380px;
+    }
+}
+
+.person-card__box {
+    width: 380px;
+    height: 470px;  
+
+    &:hover {
+        box-shadow: 10px 10px map-get($colors, shadow-bg);
+        transform: translate(-10px, -10px);
+        transition: 200ms;
+    }
+
+    &--hiden {
+    position: absolute;
+    background: linear-gradient(rgba(238, 139, 137, 0.8), rgba(238, 214, 135, 0.8));
+    width: 380px;
+    height: 470px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    &--hiden:hover {
+        opacity: 1;
+    }
+}
+
+.hiden__icon {
+    @include Flex(row, space-between, center);
+    height: 55px;   
+    width: 223px;
+
+    &--svgIcon {
+        @include Flex(row, center, center);
+        width: 55px;
+        height: 55px;
+        background-color: map-get($colors, hover-color);
+
+    &:hover .letter {
+        fill: #fff;
+    }     
+
+    &:hover {
+        background-color: map-get($colors, hover-icon);
+    }
+}
+}
+
+.facebook-logo, .twitter-black-shape, .pinterest-logo, .instagram-symbol {
+    width: 25px;
+    height: 25px;
+    fill: map-get($colors, hover-icon);
+}
+
+.name {
+    @include Font-sec(14px, uppercase, map-get($colors, gray-text));
+    @extend %Monts-bold;
+}
+
+.skill {
+    @include Font-sec(14px, uppercase, map-get($colors, semi-gray-text));
+    @extend %roboto;
+    font-style: italic;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}

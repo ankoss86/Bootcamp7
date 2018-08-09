@@ -1,0 +1,90 @@
+.wrapper {
+    background-image: linear-gradient(rgba(238, 139, 137, 0.8), rgba(238, 214, 135, 0.8)), url(../img/Layer15@1x.png);
+    background-position:  center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 100vw;
+}
+
+// цвет иконки svg
+
+.letter-menu {
+    fill: #fff;     
+} 
+
+.header {
+    @include Flex(column, center, space-between);
+    @extend %container;
+    padding: 35px 0 0;
+
+    &__info {
+        @include Flex(column, space-between, center);
+    }
+    
+    &__info-title {
+        @include Font-header(72px, capitalize);
+        @extend %kaushan;
+        margin: 0 0 55px;
+    }
+
+    &__info-main-title {
+        @include Font-header(150px, uppercase);
+        @extend %Monts-bold;
+        text-align: center;
+        line-height: 0.8;
+        margin: 0 0 120px;
+    }
+
+    &__info-search {
+        @include Font-header(14px, uppercase);
+        @extend %Monts-bold;
+        border: 2px solid #fff;
+        padding: 10px 30px;
+        text-decoration: none;
+    }
+}
+
+.header-top {
+    @include Flex(row, space-between, center);
+    padding: 0 0 165px;
+
+    &__logo {
+        @include Font-header (30px, none);
+        @extend %Monts-bold;
+        text-decoration: none;
+    }
+}
+
+.nav__menu, .menu {
+        @include Flex(row, space-between, center);
+        min-width: 630px;
+        list-style: none;
+        margin: 0;
+
+    &__items-link {
+        @include Font-header (14p, uppercase);
+        @extend %Monts-reg;
+        text-decoration: none;
+        padding: 0 0 8px;
+    }
+    &__icons {        
+        padding:  8px 0;
+        border-bottom: 4px solid  rgba(0, 0, 0, 0.0);        
+        width: 20px;
+        height: 20px;
+    }
+    &__items-link:hover {
+        color: map-get($colors, hover-color);
+        border-bottom: 4px solid map-get($colors, hover-color);
+    }
+
+    &__items-link:hover .letter-menu {
+        fill: map-get($colors, hover-color);
+    }
+
+    &__items-link:hover .menu__icons {
+        border-bottom: 4px solid map-get($colors, hover-color);
+    }
+}
+
