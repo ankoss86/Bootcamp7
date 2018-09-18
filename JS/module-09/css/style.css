@@ -1,0 +1,50 @@
+.time {
+  font-family: 'Lobster Two';
+  font-size: 90px;
+  margin: 0 auto 40px;
+}
+
+.stopwatch {
+  box-shadow: inset 0px 0px 11px 2px rgba(74,61,74,0.66);
+  width: 80%;
+  margin: 20px auto 20px;
+  padding: 40px;
+  /* border: 5px solid green; */
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  box-shadow: inset 0px 0px 11px 2px rgba(74,61,74,0.66);
+  background: orange;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 30px;
+  font-family: 'Lobster Two';
+  display: block;
+  width: 200px;
+  height: 50px;  
+}
+
+.battons {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.laps {
+  box-shadow: inset 0px 0px 11px 2px rgba(74,61,74,0.66);
+  border-radius: 5px;
+  width: 83%;
+  margin: auto;
+  padding: 10px 10px;
+}
+
+.lapTime {
+  list-style: none;
+  padding: 5px;
+  font-size: 20px;
+  text-transform: uppercase;
+}

@@ -48,4 +48,3 @@ function onClick(){
   liArr.forEach(el => el.classList.contains('activ') ? el.classList.remove('activ') : el);  
   event.target.parentElement.classList.toggle('activ'); 
 }
-
