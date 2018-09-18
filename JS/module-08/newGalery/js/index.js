@@ -9,26 +9,26 @@ const galleryItems = [
   { preview: 'img/preview-6.jpeg', fullview: 'img/fullview-6.jpeg', alt: "alt text 6" },
 ];
 
-class createGalery{
+class createGalery {
   constructor (object){
-    this.items = object;
-    this.parentNode = document.querySelector('.image-gallery');
-    this.defaultActiveItem = object[0].fullview;
-  };  
+    this.items = object.items,
+    this.parentNode = object.parentNode,
+    this.defaultActiveItem = object.defaultActiveItem
+  }
 
-  addContent(object){ 
+  addContent(){ 
 
     let fuelView = document.createElement('div');
     fuelView.classList.add('fullview');
     let fuelViewImg = document.createElement('img');
     fuelViewImg.classList.add('fuulImg');
-    fuelViewImg.setAttribute('src', this.defaultActiveItem);
-    fuelViewImg.setAttribute('alt', object[0].alt);
+    fuelViewImg.setAttribute('src', this.items[this.defaultActiveItem-1].fullview);
+    fuelViewImg.setAttribute('alt', this.items[this.defaultActiveItem-1].alt);
     
     let list = document.createElement('ul');
     list.classList.add('preview'); 
     
-      for(let i of object){
+      for(let i of this.items){
         let li = document.createElement('li');
         let img = document.createElement('img');
         img.setAttribute('src', i.preview);
@@ -54,15 +54,21 @@ class createGalery{
 
       for(let i of uls){
         i.addEventListener('click', onClick);
-      };       
-      
+      };    
   }; 
 };
 
-function getGalery(){
-  let galery = new createGalery(galleryItems);
-  galery.addContent(galleryItems);
-};
+let newGalery = new createGalery({
+  items: galleryItems,
+  parentNode: document.querySelector('.image-gallery'),
+  defaultActiveItem: 1
+});
 
-document.querySelector('.btn').addEventListener('click', getGalery);
-  
+newGalery.addContent()
+
+
+
+
+// let galery = new createGalery(galleryItems, parentNode);
+// galery.addContent()
+
