@@ -98,3 +98,26 @@ const updateUser = (id, user) => {
 };
 
 
+// const getAllId = () => {
+//     fetch('https://test-users-api.herokuapp.com/users')
+//         .then(result => result.ok ? result.json() : null)
+//         .then(data => data.data)
+//         .then(data => {
+//             console.log(data);
+//             let arr = []
+//             for(let i of data){
+//                 let id = i.id;
+//                 arr.push(id);
+                
+//             }
+//             console.log(arr);
+//             arr.map(el => {
+//                 removeUser(el)
+//             })
+//             return data;
+//         })
+
+
+//         .catch(error => console.log(error));
+// }
+// getAllId()
