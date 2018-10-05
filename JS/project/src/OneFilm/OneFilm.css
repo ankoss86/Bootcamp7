@@ -1,0 +1,177 @@
+.oneFilm {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 54px); ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.bgImg {
+    width: 100%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.litleImgOne {
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    display: block;
+    max-width: 22%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: inset -1px -1px 12px 5px rgba(0,0,0,0.75);
+}
+
+.mainInfoOne {
+    position: absolute;
+    top: 22%;
+    left: 35%;
+}
+
+.yearOne {
+    display: block;
+    color: #FF5722;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.nameOne {
+    display: block;
+    color: #FF5722;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+#oneTimer {
+    color: #FF5722;
+    font-size: 20px;
+    margin-right: 8px;
+
+}
+
+.timeingOne {
+    display: block;
+    color: #FF5722;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.voteOne {
+    display:inline-block;
+    padding: 0 3px;
+    border-radius: 3px;
+    background-color: #ffd564;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.voteQuon {
+    margin-left: 10px;
+    color: #FF5722;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.ganre {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 12px;
+    color: #FF5722;    
+}
+
+.allGanre {
+    text-align: center;
+}
+
+.toWeb {
+    text-decoration: none;
+    color: #FF5722;
+    font-size: 12px;
+}
+
+.fullInfo {
+    display: flex;
+    height: calc(100vh - 50% - 54px);
+}
+
+.titles {
+    padding: 10px;
+    margin-left: 50px;
+    box-sizing: border-box;
+    margin-top: 100px;
+    /* border: 1px solid #FF5722; */
+    width: 30%;
+}
+
+.ganreText, .tagName, .siteName, .aboutOne {
+    margin-right: 10px;
+    display: block;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: rgb(52, 67, 75);
+}
+
+.tagline {
+    color: #FF5722;
+    font-size: 12px;
+}
+
+.fullText {
+
+    padding: 1rem 10px 0;
+    width: 30%;
+    height: 200px;
+    font-size: 12px;
+    
+}
+
+.fullOne {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    height: 150px;
+    overflow-y: scroll;
+}
+
+.sameFilms {
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+    width: 60%;
+    height: 50px;
+    background: #eee;
+}
+
+.trailer {
+    width: 35%;
+}
+
+.youtube {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* @media only screen and (min-width: 768px) {
+    .grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        height: calc(100vh - 54px);
+        overflow-y: scroll;        
+    } */
+
+    

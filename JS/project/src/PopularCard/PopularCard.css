@@ -1,0 +1,39 @@
+.popImg {
+    border-radius: 10px;
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.stars {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popCard {
+    padding: 1rem;
+}
+
+.popTitle {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 3px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.starsIcon {
+    /* display: flex; */
+    /* justify-content: space-around; */
+    font-size: 12px;
+}
+
+#stars {
+    color: #ffd564;
+    margin-left: 8px;
+}
+
+.img-name {
+    display: flex;
+    margin-bottom: 8px;
+}

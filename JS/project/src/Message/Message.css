@@ -1,0 +1,50 @@
+.messageBox {
+    margin: 0 auto 15px;
+    width: 100%;
+}
+
+.userInfo {   
+    margin: auto;
+    margin-bottom: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.userLogo {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgb(68, 174, 201);
+}
+
+.userName {
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.textMess {
+    position: relative;
+    margin: auto;
+    width: 90%;
+    color: #fff;
+    padding: 10px;
+    background-color: rgb(68, 174, 201);
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: inset -1px 1px 5px 5px rgba(0,0,0,0.29);
+}
+
+.textMess::before {
+    content: ''; 
+    position: absolute;
+    left: 10px; top: -20px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid  rgb(68, 174, 201);
+}
+  
+

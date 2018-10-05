@@ -1,0 +1,65 @@
+.main {
+    width: 100%;
+}
+
+.searchForm {
+    position: relative;
+    padding: 1rem;
+    background-color: #f5f6f7;
+}
+
+.label {
+    display: block;    
+    position: relative;
+}
+
+.inputSearch {
+    padding-left: 10px;
+    display: block;
+    width: 80%;
+    border: 1px solid #d4d8da;
+    border-radius: 3px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.fa-search {
+    position: absolute;
+    top: 2px;
+    right: 22%;
+}
+
+.fa-bars {
+    position: absolute;
+    top: 18px;
+    left: 86%;
+}
+
+.fa-comments {
+    position: absolute;
+    top: 18px;
+    left: 93%;
+}
+
+@media only screen and (min-width: 768px) {
+    .main {
+        width:50%;
+    }
+
+    .fa-bars, .fa-comments {
+        display: none;
+    }
+
+    .inputSearch{
+        width: 100%;
+    }
+
+    .fa-search{
+        right: 10px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .main {
+        width:60%;
+    }
+}

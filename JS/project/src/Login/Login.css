@@ -1,0 +1,12 @@
+.regForm {
+    
+    display: flex;
+    flex-direction: column;
+    background-color: #4c4145;
+    padding: 10px;
+    display: none;
+}
+
+.email, .login {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,181 @@
+.menu {
+    /* display: none; */
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.nameLogo {
+    padding: 2rem;
+    background-color: #40373a;
+}
+
+.name{
+    margin-left: 10px;
+    font-size: 2.5rem;
+    color: #fff;
+    font-family: 'Indie Flower', cursive;
+}
+
+.hide {
+    position: absolute;
+    left: -800px;
+    top: 120px;
+    width: 100%;
+    z-index: 10;
+    /* margin: 0; */
+    padding: 2rem;
+    list-style: none;;
+    background-color: #4c4145;
+    transition-duration: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.show {
+    height: 100vh;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 120px);
+    z-index: 10;
+    margin: 0;
+    padding: 2rem;
+    list-style: none;;
+    background-color: #4c4145;
+    transition-duration: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.menuItem {
+    margin-bottom: 1rem; 
+    display: flex;
+    width: 100%;
+}
+
+.menuItem:hover > .menuLink, .menuItem:hover > i, .menuItem:hover > .quontity {
+    color:#fff;
+}
+
+.menuItem:hover > .quontity {
+    background-color: #fe505a;
+}
+
+.menuItem:last-child {
+    margin-bottom: 0;
+}
+
+.quontity {
+    display: block;
+    margin-left: auto;
+    padding: 2px 10px;
+    background-color: #40373a;
+    border-radius: 5px;
+    color: #b4b1b2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.menuLink {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #b4b1b2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+.menuIcon {
+    font-size: 30px;
+}
+
+.fas, .far {
+    color: #b4b1b2;
+}
+
+.fa-video {
+    color: #ffd564;
+}
+
+.hideMenu {
+    position: relative;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.hideMenuIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: auto;
+    font-size: 30px;
+    margin-right: 5px;    
+}
+
+.quontity {
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .nameLogo {
+        padding: 10px 40px;
+        height: 54px;
+    }
+
+    .name {
+        font-size: 28px;
+    }
+
+    .fa-video {
+        font-size: 16px;
+    }
+
+    .menu {
+        width: 30%;
+
+    }
+
+    .hideMenuIcon {
+        display: none;
+    }
+
+    .menuIcon {
+        font-size: 16px;
+    }
+
+    .menuLink {
+        font-size: 12px;
+    }
+
+    .hide {
+        position: static;
+        display: block;
+        padding: 0 2rem 10px 2rem;
+        /* display: block; */
+    }
+
+    .menuItem {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .wish {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .menu {
+        width: 20%;
+    }
+}

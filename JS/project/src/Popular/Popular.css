@@ -1,0 +1,29 @@
+.wish {
+    /* position: relative; */
+    display: none;
+    width: 100%;
+    background-color: #4c4145;
+   
+    /* height: 100%; */
+    /* padding: 0 1rem; */
+}
+
+.as {
+    overflow-y: scroll;
+    height: calc(100vh - 264px);
+}
+
+.best {
+    /* position: absolute; */
+
+    width: 100%;
+    padding: 10px 0;
+    background-color: #40373a;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}

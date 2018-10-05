@@ -1,0 +1,102 @@
+.filmCard {
+    width: 100%;
+    position: relative;
+}
+
+.overlay {
+    opacity: 0;
+    display: flex;
+    width: 70%;
+    height: 10%;
+    position: absolute;
+    justify-content: space-between;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.filmCard:hover> .overlay {
+    opacity: 1;
+    transition: 1s;
+}
+
+.overlayIcon{
+    background: rgba(118, 127, 131, 0.5);
+    position: relative;
+    border: 1px solid #d4d8da;
+    border-radius: 3px;
+    width: 23%;
+    height: 100%;
+}
+
+.hidenIcons{
+    color: rgba(255, 255, 255, 0.726);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.overlayIcon:hover {
+    background-color: rgba(255, 255, 255, 0.555);;
+    border-color:   rgba(118, 127, 131, 0.5);;
+}
+
+.overlayIcon:hover > .hidenIcons {
+    color: rgb(68, 174, 201);;
+}
+
+.poster {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.tooltip::before {
+    content: attr(data-title);
+    color: #fff;
+    width: 100px;
+    margin: auto;
+    font-size: 14px;
+    position: absolute;
+    text-align: center;
+    top: -30px;
+    left: 50%;
+    padding: 3px;
+    background-color: rgba(0,0,0, 0.5);
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.overlayIcon:hover > .tooltip::before {
+    opacity: 1;
+    transition: 1s;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .hidenIcons {
+        font-size: 25px;
+    }
+
+    .filmCard {
+        width: 47%;
+        margin: 10px 5px;
+    }
+
+    .filmCard:nth-last-child(-n+2) {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .filmCard {
+        width: 24%;
+        margin: 0 0 4px 4px;
+    }
+
+    .filmCard:nth-last-child(-n+4) {
+        margin-bottom: 0;
+    }
+}
