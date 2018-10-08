@@ -18,13 +18,12 @@ componentDidMount(){
     .catch(err => console.log(err))
 }
 
-
     render() {
         return (
             <div className='wish'>
                 <p className="best">Today best choise</p>
                 <div className='as'>
-                {this.state.results.map(el => <PopularCard title={el.title} rating={el.vote_average} img={el.poster_path}/>)}
+                {this.state.results.map(el => <PopularCard getFullHandler={this.props.getFullHandler} id={el.id} title={el.title} rating={el.vote_average} img={el.poster_path}/>)}
                 </div>
             </div>
         );

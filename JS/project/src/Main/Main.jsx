@@ -7,7 +7,7 @@ import './Main.css';
 import Favorites from '../Favorites/Favorites';
 import OneFilm from '../OneFilm/OneFilm.jsx';
 
-const Main = ({propToOneCard, getFullHandler, showMenuHendler, showChatHendler, addToFavoritesHendler}) => {
+const Main = ({propToOneCard, propToOneCardSimilar, getFullHandler, showMenuHendler, showChatHendler, addToFavoritesHendler}) => {
 
         return (
             <main className='main'>
@@ -23,7 +23,7 @@ const Main = ({propToOneCard, getFullHandler, showMenuHendler, showChatHendler, 
                     <Route exact path='/' render={props =><NowPlaying getFullHandler={getFullHandler} addToFavoritesHendler={addToFavoritesHendler} {...props}/>}/>
                     <Route path='/comming' render={props =><CommingSoon getFullHandler={getFullHandler} addToFavoritesHendler={addToFavoritesHendler} {...props}/>}/>
                     <Route path='/favorites' component={Favorites}/>
-                    <Route path='/more' render={props =><OneFilm getFullHandler={getFullHandler} propToOneCard={propToOneCard} {...props}/>}/>
+                    <Route path='/more' render={props =><OneFilm getFullHandler={getFullHandler} propToOneCard={propToOneCard} propToOneCardSimilar={propToOneCardSimilar} {...props}/>}/>
                 </Switch>
             </main>
         );

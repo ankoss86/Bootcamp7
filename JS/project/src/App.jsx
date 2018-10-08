@@ -13,6 +13,8 @@ state = {
   showChat: false,
   storadge: false,
   results: [],
+  similarResults: [],
+
 }
 
 showMenuHendler = () => {
@@ -48,19 +50,26 @@ getFullHandler = (event) => {
 
   let id = event.target.id;
   console.log(id);
+  console.log(event.target);
   
   axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=c078934a9430d72f0b98a6beeba0443b&language=ru-RUS`)
   .then(res => res.data)
   .then(res => this.setState({results: res}))
   .catch(err => console.log(err)) 
+
+  axios.get(`https://api.themoviedb.org/3/movie/${id}/similar?api_key=c078934a9430d72f0b98a6beeba0443b&language=ru-RUS&page=1`)
+  .then(res => res.data)
+  .then(res => this.setState({similarResults: res.results}))
+  .catch(err => console.log(err)) 
+  
 }
 
   render() {
     return (
       <div  className='app'>
                 
-        <Menu showMenuHendler={this.showMenuHendler} showMenu={this.state.showMenu}/>
-        <Main propToOneCard={this.state.results} getFullHandler={this.getFullHandler} addToFavoritesHendler={this.addToFavoritesHendler} showMenuHendler={this.showMenuHendler} showChatHendler={this.showChatHendler}/>
+        <Menu getFullHandler={this.getFullHandler} showMenuHendler={this.showMenuHendler} showMenu={this.state.showMenu}/>
+        <Main propToOneCardSimilar={this.state.similarResults} propToOneCard={this.state.results} getFullHandler={this.getFullHandler} addToFavoritesHendler={this.addToFavoritesHendler} showMenuHendler={this.showMenuHendler} showChatHendler={this.showChatHendler}/>
         <Chat showChatHendler={this.showChatHendler} showChat={this.state.showChat}/>
       </div>
     );

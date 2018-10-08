@@ -33,7 +33,7 @@
     width: 90%;
     color: #fff;
     padding: 10px;
-    background-color: rgb(68, 174, 201);
+    background-color: #40373a;
     border-radius: 10px;
     font-family: 'Roboto', sans-serif;
     box-shadow: inset -1px 1px 5px 5px rgba(0,0,0,0.29);
@@ -44,7 +44,7 @@
     position: absolute;
     left: 10px; top: -20px;
     border: 10px solid transparent;
-    border-bottom: 10px solid  rgb(68, 174, 201);
+    border-bottom: 10px solid  #40373a;
 }
   
 

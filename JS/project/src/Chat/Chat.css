@@ -2,8 +2,9 @@
     position: static;
     width: 100%;
     height:  54px;
-    background-color: #edeff0;
+    background-color: #40373a;
     margin-bottom: 10px;
+
 }
 
 .chatBox {
@@ -14,6 +15,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #4c4145;
 }
 
 .chat {
@@ -24,6 +26,7 @@
     margin-bottom: 5px;
     overflow-y: scroll;
     height: calc(100vh - 199px);
+    /* background-color: green; */
 }
 
 .chatSend {
@@ -35,12 +38,13 @@
     width: 90%;
     height: 130px;
     margin: auto;
+    /* background-color: green; */
 }
 
 .area {
     width: 100%;
     /* height: auto; */
-    border: 1px solid  rgb(68, 174, 201);
+    border: 1px solid  #40373a;
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -55,7 +59,7 @@
     padding: 5px 10px;
     border-radius: 10px;
     text-transform: uppercase;
-    background-color: rgb(68, 174, 201);
+    background-color: #40373a;
     font-family: 'Roboto', sans-serif;
 }
 

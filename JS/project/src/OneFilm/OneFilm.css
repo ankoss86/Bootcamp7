@@ -72,7 +72,7 @@
     padding: 0 3px;
     border-radius: 3px;
     background-color: #ffd564;
-    color: #fff;
+    color: #000;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
@@ -104,6 +104,7 @@
 .fullInfo {
     display: flex;
     height: calc(100vh - 50% - 54px);
+    background-color: #40373a;
 }
 
 .titles {
@@ -121,7 +122,11 @@
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    color: rgb(52, 67, 75);
+    color: rgb(218, 225, 230);
+}
+
+.aboutOne {
+margin-left: 20px;
 }
 
 .tagline {
@@ -135,24 +140,67 @@
     width: 30%;
     height: 200px;
     font-size: 12px;
+    color: #FF5722;
     
 }
 
 .fullOne {
+    padding: 3px;
     display: block;
     font-family: 'Roboto', sans-serif;
     text-align: justify;
-    height: 150px;
+    height: 100px;
     overflow-y: scroll;
 }
 
 .sameFilms {
     position: absolute;
-    bottom: 3%;
-    right: 3%;
-    width: 60%;
-    height: 50px;
-    background: #eee;
+    bottom: 5px;
+    right: 1%;
+    width: 63%;
+    height: 128px;
+}
+
+.slick-arrow {
+    /* background-color: #FF5722; */
+    /* position: absolute; */    
+}
+
+.slick-prev{
+    /* background-color: #FF5722; */
+    position: absolute;
+    left: 10px;
+    z-index: 3;
+}
+
+.slick-next{
+    /* background-color: #FF5722; */
+    position: absolute;
+    right: 10px;
+}
+  
+.slick-prev::before {
+    content: "<";
+    font-size: 40px;
+    font-weight: 800;
+    opacity: 1;
+    color: #FF5722;
+}
+
+.slick-next::before {
+    content: ">";
+    font-size: 40px;
+    font-weight: 800;
+    opacity: 1;
+    color: #FF5722;
+}
+
+.slick-arrow:hover {
+    /* background-color: #FF5722; */    
+}
+
+.similar {
+    width: 19%;
 }
 
 .trailer {
@@ -162,8 +210,13 @@
 .youtube {
     display: block;
     max-width: 100%;
-    height: auto;
+    height: 150px;
 }
+
+.pointer {
+    cursor: pointer;
+}
+
 
 /* @media only screen and (min-width: 768px) {
     .grid {

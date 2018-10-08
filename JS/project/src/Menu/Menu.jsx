@@ -23,7 +23,7 @@ class Menu extends Component {
                     <li className="menuItem"><i className="menuIcon far fa-comment"></i><NavLink to='/disscussion' className="menuLink">Discussion</NavLink><span className="quontity">0</span></li>
                     
                 </ul>
-                <Popular/>
+                <Popular getFullHandler={this.props.getFullHandler}/>
             </nav>            
         );
     }

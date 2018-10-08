@@ -11,6 +11,7 @@
 .as {
     overflow-y: scroll;
     height: calc(100vh - 264px);
+    transition-duration: 1000;
 }
 
 .best {
