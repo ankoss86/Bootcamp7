@@ -1,32 +1,45 @@
 import React, { Component } from 'react';
 import Grid from '../Grid/Grid.jsx';
 import PropTypes from 'prop-types';
-import axios from 'axios';
+import { asyncNowPlaying } from '../redux/actions/nowPayingAction';
+import { asyncCommingSoon } from '../redux/actions/commingSoonAction';
+import { connect } from 'react-redux';
+import { playNowSort } from '../redux/selector/menuSelectors';
+
 
 class NowPlaying extends Component {
 
-    state = {
-
-       results: [],
-        
-    } 
-
 componentDidMount(){
-    axios.get('https://api.themoviedb.org/3/movie/now_playing?api_key=c078934a9430d72f0b98a6beeba0443b&language=ru-RUS&page=1&region=UA')
-    .then(res => res.data.results.map(el => el))
-    .then(res => this.setState({
-      results: res
-    }))
-    .catch(err => console.log(err))
+    this.props.fetchNowPlaying();
+    this.props.asyncCommingSoon();
 }        
 
     render() {
         return (
             <div>
-                <Grid prop={this.state.results} getFullHandler={this.props.getFullHandler} addToFavoritesHendler={this.props.addToFavoritesHendler}/>
+                <Grid prop={this.props.results} addToFavoritesHendler={this.props.addToFavoritesHendler}/>
             </div>
         );
     }
 }
 
-export default NowPlaying;
+function MSTP (state) {
+    return {
+        results: playNowSort(state),
+    }
+}
+
+function MDTP (dispatch) {
+    return {
+        fetchNowPlaying: function(){
+            dispatch(asyncNowPlaying())
+        },
+
+        asyncCommingSoon: function(){
+            dispatch(asyncCommingSoon())
+        },
+
+    }
+}
+
+export default connect(MSTP, MDTP) (NowPlaying);

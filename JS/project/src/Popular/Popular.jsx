@@ -2,32 +2,45 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './Popular.css';
 import PopularCard from '../PopularCard/PopularCard';
+import { connect } from 'react-redux';
+import { asyncPopular } from '../redux/actions/popularAction';
+import { asyncFullInfo } from '../redux/actions/oneFilmInfoAction';
+
 
 class Popular extends Component {
 
-    state = {
-        results: []
-    }
-
 componentDidMount(){
-    axios.get('https://api.themoviedb.org/3/movie/top_rated?api_key=c078934a9430d72f0b98a6beeba0443b&language=ru-RUS&page=1&region=ua')
-    .then(res => {
-        this.setState({results: res.data.results});
-        console.log(this.state.results)
-    })    
-    .catch(err => console.log(err))
-}
+    this.props.fetchPopular()
+};
 
     render() {
         return (
             <div className='wish'>
                 <p className="best">Today best choise</p>
                 <div className='as'>
-                {this.state.results.map(el => <PopularCard getFullHandler={this.props.getFullHandler} id={el.id} title={el.title} rating={el.vote_average} img={el.poster_path}/>)}
+                {this.props.getPopular.map(el => <PopularCard key={Math.random()*1000} id={el.id} title={el.title} rating={el.vote_average} img={el.poster_path}/>)}
                 </div>
             </div>
         );
     }
-}
+};
 
-export default Popular;
+function MSTP (state) {
+    return {
+        getPopular: state.getPopular,
+    };
+};
+
+function MDTP (dispatch) {
+    return {
+        fetchPopular: function(){
+            dispatch(asyncPopular())
+        },
+
+        getFullInfo: function(id){
+            dispatch(asyncFullInfo(id))
+        },
+    };
+};
+
+export default connect(MSTP, MDTP) (Popular);

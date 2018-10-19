@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
 import Message from '../Message/Message.jsx';
+import Login from '../Login/Login.jsx';
+import Registration from '../Registration/Registration.jsx';
 import './Chat.css';
+
+import { connect } from 'react-redux';
+import { showChat } from '../redux/actions/showChatAction';
+import { showLogDesctop } from '../redux/actions/logShowDesctopAction';
+import { regShowDesctop } from '../redux/actions/regShowDesctopAction';
 
 class Chat extends Component {
 
     state = {
+
         messages: [
             {   
                 logo: 'https://cdn.dribbble.com/users/182238/screenshots/2383317/lion2.jpg',
@@ -40,10 +48,15 @@ class Chat extends Component {
 
     render() {
         return (
-            <div className={this.props.showChat ? 'showChat' : 'chatBox'}>
-            
+            <div className={this.props.showChat ? 'showChat' : 'chatBox'}>            
                 <div className="userLogName">
-                <div className="closs"><i onClick={this.props.showChatHendler} className="hideChatIconTop far fa-window-close fa-2x"></i></div>
+                <div className="wrapChatBtn">
+                {this.props.logShow && <Login prop={this.props.showLogDesctop}/>}
+                {this.props.regShow && <Registration prop={this.props.showRegDesctop}/>}
+                <button onClick={this.props.showLogDesctop} className='chatBtn768'>login</button>
+                <button onClick={this.props.showRegDesctop} className='chatBtn768' id='regShow'>sign up</button>
+                </div>
+                <div className="closs"><i onClick={this.props.showHideChat} className="hideChatIconTop far fa-window-close fa-2x"></i></div>
                 </div>
                     <div className="chat">
                         {(this.state.messages).map(el => <Message key={Math.random()*100} logo={el.logo} message={el.message} userName={el.userName}/>)}
@@ -51,7 +64,7 @@ class Chat extends Component {
                         <form action="#" className="chatForm">
                             <textarea name="" id="" cols="30" rows="5" placeholder='Enter your coment' className="area"></textarea>
                             <button className="chatSend">send</button>
-                            <i onClick={this.props.showChatHendler} className="hideChatIcon far fa-window-close fa-2x"></i>
+                            <i onClick={this.props.showHideChat} className="hideChatIcon far fa-window-close fa-2x"></i>
                             
                         </form>
             </div>
@@ -59,4 +72,28 @@ class Chat extends Component {
     }
 }
 
-export default Chat;
+function MSTP (state) {
+    return {
+        showChat: state.showChat,
+        logShow: state.logShowDesctop,
+        regShow: state.regShowDesctop,
+    }
+};
+
+function MDTP (dispatch) {
+    return {
+        showHideChat: function(){
+            dispatch(showChat())
+    },
+        showLogDesctop: function(){
+            dispatch(showLogDesctop())
+    },
+
+        showRegDesctop: function(){
+            dispatch(regShowDesctop())
+    },
+    
+}
+};
+
+export default connect(MSTP, MDTP) (Chat);

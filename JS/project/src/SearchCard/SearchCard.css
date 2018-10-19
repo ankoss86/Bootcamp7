@@ -1,0 +1,12 @@
+.searchImg{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.searchTitle {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    display: inline-block;
+}

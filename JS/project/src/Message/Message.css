@@ -17,7 +17,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 2px solid rgb(68, 174, 201);
+    border: 1px solid #FF5722;
 }
 
 .userName {
@@ -25,6 +25,7 @@
     margin-left: 10px;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
+    color: #b4b1b2;
 }
 
 .textMess {
@@ -32,8 +33,10 @@
     margin: auto;
     width: 90%;
     color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
     padding: 10px;
-    background-color: #40373a;
+    background-color: #fff7fa00;
     border-radius: 10px;
     font-family: 'Roboto', sans-serif;
     box-shadow: inset -1px 1px 5px 5px rgba(0,0,0,0.29);

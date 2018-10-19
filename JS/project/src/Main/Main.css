@@ -6,6 +6,8 @@
     position: relative;
     padding: 1rem;
     background-color: #4c4145;
+    /* background-image: radial-gradient(#4c4145 30%, #232e2c 60%, #4c4145); */
+    
 }
 
 .label {

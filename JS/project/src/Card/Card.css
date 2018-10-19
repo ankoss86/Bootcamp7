@@ -81,8 +81,9 @@
     }
 
     .filmCard {
-        width: 47%;
-        margin: 10px 5px;
+        width: 48%;
+        margin: 6px 0 0 6px;
+        align-self: flex-start;
     }
 
     .filmCard:nth-last-child(-n+2) {
@@ -93,7 +94,8 @@
 @media only screen and (min-width: 1200px) {
     .filmCard {
         width: 24%;
-        margin: 0 0 4px 4px;
+        margin: 6px 0 0 6px;
+        align-self: flex-start;
     }
 
     .filmCard:nth-last-child(-n+4) {

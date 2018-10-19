@@ -1,12 +1,47 @@
-.regForm {
-    
-    display: flex;
-    flex-direction: column;
-    background-color: #4c4145;
-    padding: 10px;
-    display: none;
+.login, .email {
+    padding-left: 5px;
+    display: block;
+    width: 80%;
 }
 
-.email, .login {
-    margin-bottom: 10px;
+.regForm {
+    padding: 2rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   height: 100%; 
+}
+
+.logSubmit {
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
+    border: 1px solid #fff;
+    padding: 3px 10px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    border-radius: 10px;
+    display: block;
+    font-size: 12px;
+    margin-left: 5px;
+    outline: none;
+}
+
+@media only screen and (min-width: 767px) {
+    .regForm {
+        padding: 0.5rem;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+    }
+
+    .logSubmit {
+        right: 2%;
+    }
+
+    .login, .email {
+        width: 70%;
+    }
 }

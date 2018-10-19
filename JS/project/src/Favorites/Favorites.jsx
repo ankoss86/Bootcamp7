@@ -1,31 +1,35 @@
 import React, { Component } from 'react';
-import Grid from '../Grid/Grid.jsx'
+import Grid from '../Grid/Grid.jsx';
+import { connect } from 'react-redux';
+import { renderFavorites } from '../redux/actions/favoritesAction';
 
 class Favorites extends Component {
 
-    state = {
-
-        results: [],
-    }
-
     componentDidMount(){
-        let data;
-        localStorage.getItem('films') !== null ?
-        data = JSON.parse(localStorage.getItem('films')).favorites : null;
-        if (data) {
-            this.setState({
-                results: data
-            }) 
-        }         
-    }
+        this.props.renderFavorite()
+    };
 
     render() {
         return (
             <div>
-                <Grid addToFavoritesHendler={this.props.addToFavoritesHendler} prop={this.state.results}/>
+                <Grid getFullHandler={this.props.getFullHandler} addToFavoritesHendler={this.props.removeFromVavorites} prop={this.props.getFavorites}/>
             </div>
         );
     }
-}
+};
 
-export default Favorites;
+function MSTP (state){
+    return {
+        getFavorites: state.getFavorites,
+    }
+};
+
+function MDTP(dispatch){
+    return {
+        renderFavorite: function(){
+            dispatch(renderFavorites())
+        },
+    }
+};
+
+export default connect(MSTP, MDTP) (Favorites);
